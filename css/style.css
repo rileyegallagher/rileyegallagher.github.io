@@ -1,0 +1,81 @@
+
+p.blue
+p {
+    color: darkgreen;
+    
+    
+}
+
+h1 {
+    border: 2px red solid;
+    background-color: pink;
+    width: 50%;
+/*  padding: 100px;*/
+    position: relative;
+    left: 50px;
+    visibility: hidden;
+    display: none;
+}
+
+
+h1.roboto-condensed-demo {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+a{
+    text-decoration: none;
+}
+a:link {
+    color:white;
+}
+a:visited {
+    color:skyblue;
+    text-decoration: underline;
+    background-color: blue;
+    
+}
+a:hover {
+    color:gray;
+    transition-property: color;
+    transition-duration: 2s;
+    transition-delay: 1s;
+}
+
+.movement{
+    animation-name: movement;
+    animation-duration: 4s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes movement {
+    
+    0%, 100% {
+        
+        transform: translate(0,0);
+    }
+    50%{
+        transform: translate(100px,0);
+    }
+}
+
+li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+nav > ul > li {
+   list-style-type:none;
+    display: inline-block; 
+    padding-right: 2em;
+    margin: 2% 2% 2% 2%
+}nav { background-color: navy; 
+}
+    
+
+
+    
